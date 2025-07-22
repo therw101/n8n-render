@@ -8,15 +8,15 @@ envVars:
   - key: N8N_BASIC_AUTH_ACTIVE
     value: "true"
   - key: N8N_BASIC_AUTH_USER
-    value: therw0001@gmail.com
+    value: user
   - key: N8N_BASIC_AUTH_PASSWORD
-    value: Pach0801847143.
+    value: yourpassword
   - key: GENERIC_TIMEZONE
     value: Asia/Bangkok
   - key: DB_TYPE
     value: postgresdb
   - key: DB_POSTGRESDB_HOST
-    value: https://vtdbfogzmxobvaslgpdr.supabase.co        # <-- from Supabase
+    value: your-db.supabase.co        # <-- from Supabase
   - key: DB_POSTGRESDB_PORT
     value: "5432"
   - key: DB_POSTGRESDB_DATABASE
@@ -24,6 +24,6 @@ envVars:
   - key: DB_POSTGRESDB_USER
     value: postgres                  # default
   - key: DB_POSTGRESDB_PASSWORD
-    value: pach0801847143
+    value: your_supabase_db_password
   - key: N8N_ENCRYPTION_KEY
     value: your-very-secure-random-string
