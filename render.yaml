@@ -1,28 +1,29 @@
 envVars:
-  - key: N8N_PORT
-    value: "10000"
   - key: N8N_HOST
     value: n8n-6z8v.onrender.com
+  - key: N8N_PROTOCOL
+    value: https
   - key: WEBHOOK_URL
     value: https://n8n-6z8v.onrender.com/
   - key: N8N_BASIC_AUTH_ACTIVE
-    value: "true"
-  - key: N8N_BASIC_AUTH_USER
-    value: user
-  - key: N8N_BASIC_AUTH_PASSWORD
-    value: yourpassword
+    value: "false"  # Disable to allow Telegram to reach webhooks
+  # Optional: re-enable later if you secure your webhooks another way
+  # - key: N8N_BASIC_AUTH_USER
+  #   value: user
+  # - key: N8N_BASIC_AUTH_PASSWORD
+  #   value: yourpassword
   - key: GENERIC_TIMEZONE
     value: Asia/Bangkok
   - key: DB_TYPE
     value: postgresdb
   - key: DB_POSTGRESDB_HOST
-    value: your-db.supabase.co        # <-- from Supabase
+    value: your-db.supabase.co        # from Supabase
   - key: DB_POSTGRESDB_PORT
     value: "5432"
   - key: DB_POSTGRESDB_DATABASE
-    value: postgres                  # default
+    value: postgres                   # default
   - key: DB_POSTGRESDB_USER
-    value: postgres                  # default
+    value: postgres                   # default
   - key: DB_POSTGRESDB_PASSWORD
     value: your_supabase_db_password
   - key: N8N_ENCRYPTION_KEY
