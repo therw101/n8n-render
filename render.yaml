@@ -1,21 +1,29 @@
-services:
-  - type: web
-    name: n8n
-    env: docker
-    plan: free
-    dockerfilePath: ./Dockerfile
-    envVars:
-      - key: N8N_PORT
-        value: 10000
-      - key: N8N_HOST
-        value: n8n-6z8v.onrender.com
-      - key: WEBHOOK_URL 
-        value: https://n8n-6z8v.onrender.com/  
-      - key: N8N_BASIC_AUTH_ACTIVE
-        value: "true"
-      - key: N8N_BASIC_AUTH_USER
-        value: admin
-      - key: N8N_BASIC_AUTH_PASSWORD
-        value: yourpassword
-      - key: GENERIC_TIMEZONE
-        value: Asia/Bangkok
+envVars:
+  - key: N8N_PORT
+    value: "10000"
+  - key: N8N_HOST
+    value: n8n-6z8v.onrender.com
+  - key: WEBHOOK_URL
+    value: https://n8n-6z8v.onrender.com/
+  - key: N8N_BASIC_AUTH_ACTIVE
+    value: "true"
+  - key: N8N_BASIC_AUTH_USER
+    value: therw0001@gmail.com
+  - key: N8N_BASIC_AUTH_PASSWORD
+    value: Pach0801847143.
+  - key: GENERIC_TIMEZONE
+    value: Asia/Bangkok
+  - key: DB_TYPE
+    value: postgresdb
+  - key: DB_POSTGRESDB_HOST
+    value: https://vtdbfogzmxobvaslgpdr.supabase.co        # <-- from Supabase
+  - key: DB_POSTGRESDB_PORT
+    value: "5432"
+  - key: DB_POSTGRESDB_DATABASE
+    value: postgres                  # default
+  - key: DB_POSTGRESDB_USER
+    value: postgres                  # default
+  - key: DB_POSTGRESDB_PASSWORD
+    value: pach0801847143
+  - key: N8N_ENCRYPTION_KEY
+    value: your-very-secure-random-string
