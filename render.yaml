@@ -10,12 +10,12 @@ services:
       - key: N8N_HOST
         value: n8n-6z8v.onrender.com
       - key: WEBHOOK_URL 
-        value: https://n8n-6z8v.onrender.com/webhook-test/51942fbb-ca0e-4ec4-9423-5fcc7d3c4281/webhook
+        value: https://n8n-6z8v.onrender.com/  
       - key: N8N_BASIC_AUTH_ACTIVE
         value: "true"
       - key: N8N_BASIC_AUTH_USER
-        value: therw0001@gmail.com
+        value: admin
       - key: N8N_BASIC_AUTH_PASSWORD
-        value: Pach0801847143.
+        value: yourpassword
       - key: GENERIC_TIMEZONE
         value: Asia/Bangkok
